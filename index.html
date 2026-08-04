@@ -522,8 +522,8 @@
 <script src="js/scripts.min.js"></script>
 <script>
 function openGrab() {
-    var dest = encodeURIComponent('{"startLatLng":"","endLatLng":"21.02300,105.84320","endAddress":"Nh\u00e0 H\u00e0ng Long V\u0129, 3A \u0110\u00e0o Duy Anh, H\u00e0 N\u1ed9i"}');
-    var deepLink = 'grab://open?screenType=BOOKING&param=' + dest;
+    var param = encodeURIComponent('{"endLatLng":"21.02300,105.84320","endAddress":"Nh\u00e0 H\u00e0ng Long V\u0129, 3A \u0110\u00e0o Duy Anh, Kim Li\u00ean, H\u00e0 N\u1ed9i"}');
+    var deepLink = 'grab://open?screenType=BOOKING&param=' + param;
     var fallback = 'https://www.grab.com/vn/';
     var start = Date.now();
     window.location = deepLink;
