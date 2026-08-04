@@ -54,7 +54,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.min.css?v=3">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
@@ -522,6 +522,32 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
+</script>
+
+<!-- Confetti on page load -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script>
+(function() {
+    function fireConfetti() {
+        var duration = 2000;
+        var end = Date.now() + duration;
+
+        var colors = ['#ff6b9d', '#ffd700', '#ff4757', '#2ed573', '#1e90ff', '#ff6348', '#eccc68'];
+
+        // left cannon
+        confetti({ particleCount: 60, angle: 60, spread: 55, origin: { x: 0 }, colors: colors });
+        // right cannon
+        confetti({ particleCount: 60, angle: 120, spread: 55, origin: { x: 1 }, colors: colors });
+
+        var interval = setInterval(function() {
+            if (Date.now() > end) return clearInterval(interval);
+            confetti({ particleCount: 8, angle: 60, spread: 55, origin: { x: 0 }, colors: colors });
+            confetti({ particleCount: 8, angle: 120, spread: 55, origin: { x: 1 }, colors: colors });
+        }, 150);
+    }
+
+    window.addEventListener('load', fireConfetti);
+})();
 </script>
 </body>
 </html>
