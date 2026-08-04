@@ -525,10 +525,19 @@ function openGrab() {
     var param = encodeURIComponent('{"endLatLng":"21.02300,105.84320","endAddress":"Nh\u00e0 H\u00e0ng Long V\u0129, 3A \u0110\u00e0o Duy Anh, Kim Li\u00ean, H\u00e0 N\u1ed9i"}');
     var deepLink = 'grab://open?screenType=BOOKING&param=' + param;
     var fallback = 'https://www.grab.com/vn/';
-    var start = Date.now();
+    var appOpened = false;
+
+    document.addEventListener('visibilitychange', function onHide() {
+        if (document.hidden) {
+            appOpened = true;
+            document.removeEventListener('visibilitychange', onHide);
+        }
+    });
+
     window.location = deepLink;
+
     setTimeout(function() {
-        if (Date.now() - start < 2500) window.location = fallback;
+        if (!appOpened) window.location = fallback;
     }, 2000);
 }
 </script>
