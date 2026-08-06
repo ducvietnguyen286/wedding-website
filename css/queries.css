@@ -21,7 +21,15 @@
 @media screen and (max-width: 991px) {
     header {
         width: 90%;
-        padding-left: 25px;
+        padding-left: 10px;
+    }
+
+    header .logo {
+        margin-left: -4px;
+    }
+
+    header .logo img {
+        height: 60px;
     }
 
     .hero .hero-content {
