@@ -11,7 +11,7 @@ $(document).ready(function () {
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        $('#cd-days').text(String(days).padStart(3, '0'));
+        $('#cd-days').text(String(days).padStart(2, '0'));
         $('#cd-hours').text(String(hours).padStart(2, '0'));
         $('#cd-minutes').text(String(minutes).padStart(2, '0'));
         $('#cd-seconds').text(String(seconds).padStart(2, '0'));
