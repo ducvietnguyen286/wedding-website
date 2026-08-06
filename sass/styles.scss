@@ -281,10 +281,11 @@ Hero
     padding-top: 40%;
   }
   .hero-name-logo {
-    width: 48%;
-    max-width: 420px;
-    min-width: 230px;
-    margin: 0 auto 9%;
+    width: 68%;
+    max-width: 720px;
+    min-width: 260px;
+    margin: 0 auto 5.5%;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.32));
   }
   .wedding-countdown {
     max-width: 760px;
@@ -345,8 +346,9 @@ Hero
       padding-top: 35%;
     }
     .hero-name-logo {
-      width: 72%;
-      margin-bottom: 7%;
+      width: 88%;
+      min-width: 0;
+      margin-bottom: 8%;
     }
     .wedding-countdown {
       padding: 10px 12px;
