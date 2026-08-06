@@ -64,6 +64,8 @@
     }
 
     header nav {
+        display: block;
+        width: 100%;
         position: relative;
         top: 45%;
         -moz-transform: translatey(-45%);
@@ -101,6 +103,7 @@
     }
 
     nav ul.primary-nav {
+        display: block;
         margin: 0;
         padding: 0;
         text-align: center;
@@ -111,7 +114,9 @@
     }
 
     nav .member-actions {
+        display: block;
         position: static;
+        margin-left: 0;
         padding: 0;
         text-align: center;
     }
