@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     /***************** Hero Countdown ******************/
     function renderCountdown() {
-        var targetDate = new Date('2026-10-31T00:00:00+07:00').getTime();
+        var targetDate = new Date('2026-10-30T00:00:00+07:00').getTime();
         var now = new Date().getTime();
         var distance = Math.max(0, targetDate - now);
 
