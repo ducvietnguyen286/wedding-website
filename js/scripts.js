@@ -115,25 +115,25 @@ $(document).ready(function () {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
                     "border-bottom": "none",
-                    "padding": "35px 0"
+                    "padding": "16px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "26px",
+                    "top": "0",
                 });
                 $('header .navicon').css({
-                    "top": "34px",
+                    "top": "24px",
                 });
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
                     "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-                    "padding": "50px 0"
+                    "padding": "24px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "41px",
+                    "top": "0",
                 });
                 $('header .navicon').css({
-                    "top": "48px",
+                    "top": "32px",
                 });
             }
         });
