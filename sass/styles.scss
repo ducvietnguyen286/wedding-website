@@ -356,20 +356,23 @@ Hero
       margin-bottom: 12px;
     }
     .wedding-countdown .countdown-grid {
-      gap: 14px;
+      gap: 8px;
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
     .wedding-countdown .countdown-item {
-      min-width: 78px;
+      min-width: 0;
+      flex: 1 1 0;
     }
     .wedding-countdown .countdown-divider {
       display: none;
     }
     .wedding-countdown .countdown-value {
-      font-size: 44px;
+      font-size: 34px;
     }
     .wedding-countdown .countdown-label {
-      font-size: 11px;
-      letter-spacing: 0.14em;
+      font-size: 10px;
+      letter-spacing: 0.08em;
     }
   }
 }
