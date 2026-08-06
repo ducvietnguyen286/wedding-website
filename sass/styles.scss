@@ -299,10 +299,10 @@ Hero
     margin: 0 0 16px;
     padding: 0;
     color: #fff;
-    font-family: 'Inter', 'Open Sans', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 0.08em;
+    font-family: 'Great Vibes', 'Times New Roman', serif;
+    font-size: 52px;
+    line-height: 1.08;
+    letter-spacing: 0.02em;
     font-weight: 400;
     text-transform: none;
   }
@@ -325,20 +325,20 @@ Hero
   .wedding-countdown .countdown-value {
     display: block;
     font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-    font-size: 58px;
+    font-size: 62px;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
   }
   .wedding-countdown .countdown-label {
     display: block;
     margin-top: 6px;
-    font-size: 16px;
+    font-size: 13px;
     color: #fff;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.18em;
   }
   @media screen and (max-width: 768px) {
     .hero-content {
@@ -352,7 +352,7 @@ Hero
       padding: 10px 12px;
     }
     .wedding-countdown .wedding-date-line {
-      font-size: 13px;
+      font-size: 34px;
       margin-bottom: 12px;
     }
     .wedding-countdown .countdown-grid {
@@ -365,11 +365,11 @@ Hero
       display: none;
     }
     .wedding-countdown .countdown-value {
-      font-size: 40px;
+      font-size: 44px;
     }
     .wedding-countdown .countdown-label {
-      font-size: 12px;
-      letter-spacing: 1px;
+      font-size: 11px;
+      letter-spacing: 0.14em;
     }
   }
 }
