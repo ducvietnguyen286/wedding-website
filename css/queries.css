@@ -22,6 +22,7 @@
     header {
         width: 90%;
         padding-left: 6px;
+        padding-right: 6px;
     }
 
     header .logo {
@@ -29,7 +30,7 @@
     }
 
     header .logo img {
-        height: 64px;
+        height: 66px;
     }
 
     .hero .hero-content {
