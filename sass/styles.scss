@@ -280,9 +280,25 @@ Hero
   .hero-content {
     padding-top: 40%;
   }
-  .hero-content img {
-    width: 55%;
-    margin-bottom: 12%;
+  .hero-nameframe {
+    width: 56%;
+    max-width: 540px;
+    min-width: 260px;
+    margin: 0 auto 8%;
+    position: relative;
+  }
+  .hero-nameframe .wreath {
+    width: 100%;
+    opacity: 0.95;
+    filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.25));
+  }
+  .hero-nameframe .name-logo {
+    position: absolute;
+    width: 72%;
+    left: 14%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
   }
 }
 .navigation {
