@@ -310,10 +310,10 @@ Hero
     display: flex;
     justify-content: center;
     gap: 28px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .wedding-countdown .countdown-item {
-    min-width: 110px;
+    min-width: 88px;
   }
   .wedding-countdown .countdown-divider {
     width: 1px;
@@ -356,23 +356,27 @@ Hero
       margin-bottom: 12px;
     }
     .wedding-countdown .countdown-grid {
-      gap: 8px;
+      gap: 4px;
       flex-wrap: nowrap;
-      justify-content: space-between;
+      justify-content: center;
     }
     .wedding-countdown .countdown-item {
-      min-width: 0;
-      flex: 1 1 0;
+      min-width: 60px;
+      flex: 0 0 auto;
     }
     .wedding-countdown .countdown-divider {
-      display: none;
+      display: block;
+      width: 1px;
+      height: 34px;
+      margin: 0 2px;
     }
     .wedding-countdown .countdown-value {
-      font-size: 34px;
+      font-size: 30px;
     }
     .wedding-countdown .countdown-label {
-      font-size: 10px;
-      letter-spacing: 0.08em;
+      font-size: 9px;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
     }
   }
 }
