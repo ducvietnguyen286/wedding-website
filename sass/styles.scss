@@ -287,37 +287,46 @@ Hero
     margin: 0 auto 9%;
   }
   .wedding-countdown {
-    max-width: 720px;
+    max-width: 760px;
     margin: 0 auto;
+    padding: 14px 20px;
     color: $txt-light;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 14px;
   }
-  .wedding-date-line {
-    font-size: 26px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    font-weight: 300;
+  .wedding-countdown .wedding-date-line {
+    margin: 0 0 16px;
+    padding: 0;
+    color: #fff;
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+    font-weight: 500;
   }
-  .countdown-grid {
+  .wedding-countdown .countdown-grid {
     display: flex;
     justify-content: center;
     gap: 28px;
     flex-wrap: wrap;
   }
-  .countdown-item {
+  .wedding-countdown .countdown-item {
     min-width: 110px;
   }
-  .countdown-value {
+  .wedding-countdown .countdown-value {
     display: block;
-    font-size: 52px;
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+    font-size: 58px;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 700;
     color: #f1d98b;
   }
-  .countdown-label {
+  .wedding-countdown .countdown-label {
     display: block;
-    margin-top: 8px;
-    font-size: 18px;
+    margin-top: 6px;
+    font-size: 16px;
+    color: #f8f1d5;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
@@ -329,20 +338,23 @@ Hero
       width: 72%;
       margin-bottom: 7%;
     }
-    .wedding-date-line {
-      font-size: 18px;
-      margin-bottom: 14px;
+    .wedding-countdown {
+      padding: 10px 12px;
     }
-    .countdown-grid {
+    .wedding-countdown .wedding-date-line {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .wedding-countdown .countdown-grid {
       gap: 14px;
     }
-    .countdown-item {
+    .wedding-countdown .countdown-item {
       min-width: 78px;
     }
-    .countdown-value {
-      font-size: 34px;
+    .wedding-countdown .countdown-value {
+      font-size: 40px;
     }
-    .countdown-label {
+    .wedding-countdown .countdown-label {
       font-size: 12px;
       letter-spacing: 1px;
     }
