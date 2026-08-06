@@ -1,5 +1,27 @@
 $(document).ready(function () {
 
+    /***************** Hero Countdown ******************/
+    function renderCountdown() {
+        var targetDate = new Date('2026-10-31T00:00:00+07:00').getTime();
+        var now = new Date().getTime();
+        var distance = Math.max(0, targetDate - now);
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        $('#cd-days').text(String(days).padStart(3, '0'));
+        $('#cd-hours').text(String(hours).padStart(2, '0'));
+        $('#cd-minutes').text(String(minutes).padStart(2, '0'));
+        $('#cd-seconds').text(String(seconds).padStart(2, '0'));
+    }
+
+    if ($('#cd-days').length) {
+        renderCountdown();
+        setInterval(renderCountdown, 1000);
+    }
+
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {
